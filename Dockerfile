@@ -26,3 +26,5 @@ RUN set -xe \
     && cd ../.. && rm -rf phalcon-v${PHALCON_VERSION}.tar.gz cphalcon-phalcon-v${PHALCON_VERSION} \
 
 EXPOSE 9000
+
+CMD ["/etc/init.d/cron", "start"]
