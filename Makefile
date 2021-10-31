@@ -5,7 +5,7 @@ stop:
 	docker stop php5-fpm-phalcon2
 
 build:
-	docker buildx build --platform linux/amd64 -t yerlen/php5-fpm-phalcon2:1.0.3 .
+	docker buildx build --platform linux/amd64 -t yerlen/php5-fpm-phalcon2:1.0.13 .
 
 push:
-	docker push yerlen/php5-fpm-phalcon2:1.0.3
+	docker push yerlen/php5-fpm-phalcon2:1.0.13

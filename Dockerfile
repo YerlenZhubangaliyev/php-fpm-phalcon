@@ -27,4 +27,7 @@ RUN set -xe \
 
 EXPOSE 9000
 
-CMD ["/etc/init.d/cron", "start"]
+COPY app-entrypoint.sh /
+RUN chmod +x /app-entrypoint.sh
+
+ENTRYPOINT [ "/app-entrypoint.sh" ]
